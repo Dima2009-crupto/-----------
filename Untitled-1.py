@@ -1,33 +1,33 @@
 class Car:
     type = "car"
 
-    def __init__(self, drivin_forward: int):
+    def __init__(self,distance: float):
         print("Call_init_method")
-        self.drivin_forward = drivin_forward
+        self.distance = distance,
 
     def drivin_forward(self):
         print(f"{self.type}: я їду вперед...")
-        self.drivin_forward +=30
+        self.distance +=30    
 
     def drivin_backwards(self):
         print(f"{self.type}: я їду назад...")
-        self.drivin_backwards -=25
+        self.distance -=25
 
 
 class Truck(Car):
     type = "truck"
 
-    def  drivin_forward(self):
+    def drivin_forward(self):
         print(f"{self.type}: я їду вперед...")
-        self.drivin_forward +=40
+        self.distance +=40.0
 
     def drivin_backwards(self):
         print(f"{self.type}: я їду назад...")
-        self.drivin_backwards -=20
-
+        self.distance -=25   
+         
     def air_conditioner(self):
         print(f"{self.type}: я дую прохолодний вітер")
-        self.air_conditioner +=5
+        self.temp +=5.0
 
 
 class Passengercar(Car):
